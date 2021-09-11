@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">92.68% </span>
+                <span class="strong">39.02% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>38/41</span>
+                <span class='fraction'>16/41</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>7/7</span>
+                <span class='fraction'>0/0</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">87.5% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>7/8</span>
+                <span class='fraction'>0/8</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">92.68% </span>
+                <span class="strong">39.02% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>38/41</span>
+                <span class='fraction'>16/41</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line medium'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -104,37 +104,37 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">import { logger } from "./logger.js";
@@ -143,38 +143,38 @@ import { dirname, resolve} from 'path';
 import {fileURLToPath} from 'url';
 &nbsp;
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const defaultDownloadsFolder = resolve(__dirname, '../', 'downloads');
-&nbsp;
-export default class Routes{
-  io
-  constructor(downloadsFolder = defaultDownloadsFolder){
-    this.downloadsFolder = downloadsFolder;
-    this.fileHelper = FileHelper;
-  }
-  setSocketInstance(io){
-    this.io = io;
-  }
-  async defaultRoute(request, response){
-    response.end('Hello');
-  }
+const <span class="fstat-no" title="function not covered" >defaultDownloadsFolder<span class="fstat-no" title="function not covered" > </span>= resolve(__dirname, '../', 'downloads');</span>
+<span class="cstat-no" title="statement not covered" ></span>
+<span class="cstat-no" title="statement not covered" >export default class Routes{</span>
+<span class="cstat-no" title="statement not covered" >  io</span>
+<span class="cstat-no" title="statement not covered" >  constructor(downloadsFolder = defaultDownloadsFolder){</span>
+<span class="fstat-no" title="function not covered" >    this.downloadsFolder = downloadsFolder;</span>
+<span class="fstat-no" title="function not covered" >    this.fileHelper = FileHelper;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="cstat-no" title="statement not covered" >  setSocketInstance(io){</span>
+<span class="fstat-no" title="function not covered" >    this.io = io;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="cstat-no" title="statement not covered" >  async defaultRoute(request, response){</span>
+<span class="cstat-no" title="statement not covered" >    response.end('Hello');</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
    async <span class="fstat-no" title="function not covered" >options(request, response) {</span>
 <span class="cstat-no" title="statement not covered" >        response.writeHeader(204)</span>
 <span class="cstat-no" title="statement not covered" >        response.end()</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
-  async post(request, response){
-    logger.info('post');
-    response.end();
-  }
-  async get(request, response){
-    const files = await this.fileHelper .getFilesStatus(this.downloadsFolder)
-    response.writeHeader(200)
-    // logger.info('get');
-    response.end(JSON.stringify(files));
-  }
-  handler(request, response){
-    response.setHeader('Access-Control-Allow-Origin','*');
-    const chosen = this[request.method.toLowerCase()] || this.defaultRoute; //POST,GET.....
-    //response.end('hello world');
+  async post<span class="fstat-no" title="function not covered" >(request, response){</span>
+<span class="cstat-no" title="statement not covered" >    logger.info('post');</span>
+<span class="cstat-no" title="statement not covered" >    response.end();</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="cstat-no" title="statement not covered" >  async get(request, response){</span>
+<span class="cstat-no" title="statement not covered" >    const files = await this.fileHelper .getFilesStatus(this.downloadsFolder)</span>
+    response.<span class="fstat-no" title="function not covered" >writeHeader(200)</span>
+<span class="cstat-no" title="statement not covered" >    // logger.info('get');</span>
+<span class="cstat-no" title="statement not covered" >    response.end(JSON.stringify(files));</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="cstat-no" title="statement not covered" >  handler(request, response){</span>
+<span class="cstat-no" title="statement not covered" >    response.setHeader('Access-Control-Allow-Origin','*');</span>
+<span class="cstat-no" title="statement not covered" >    const chosen = this[request.method.toLowerCase()] || this.defaultRoute; //POST,GET.....</span>
+<span class="cstat-no" title="statement not covered" >    //response.end('hello world');</span>
     return chosen.apply(this, [request, response]);
   }
 }</pre></td></tr></table></pre>
@@ -184,7 +184,7 @@ export default class Routes{
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Thu Sep 09 2021 01:31:14 GMT-0300 (Brasilia Standard Time)
+                at Sat Sep 11 2021 02:28:31 GMT-0300 (Brasilia Standard Time)
             </div>
         </div>
         <script src="prettify.js"></script>
